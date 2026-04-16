@@ -84,3 +84,34 @@ main h1 {
 .article-heading, .article-content {
     margin: 20px 0px;
 }
+
+/* footer */
+footer {
+    margin-top: 80px;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid #676767;
+    color: #000000;
+}
+
+.footer-links {
+    margin: 15px 0;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-socials a {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.footer-socials a:hover {
+    color: black;
+}
