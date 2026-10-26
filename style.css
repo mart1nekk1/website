@@ -180,13 +180,10 @@ footer {
     color: black;
 }
 
-/* =======================================
-   Galerie etap na blogu
-   ======================================= */
+/* galerie */
 
 .stage-gallery {
     display: grid;
-    /* Automatické sloupce od min. 220px do 1fr podle šířky displeje */
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 16px;
     margin: 30px 0 50px 0;
@@ -200,7 +197,7 @@ footer {
     border-radius: 12px;
     background-color: #f0f0f0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    aspect-ratio: 4 / 3; /* Jednotný poměr stran pro všechny náhledy */
+    aspect-ratio: 4 / 3;
 }
 
 .gallery-item img {
@@ -211,12 +208,10 @@ footer {
     transition: transform 0.4s ease;
 }
 
-/* Jemný zoom při najetí myší */
 .gallery-item:hover img {
     transform: scale(1.05);
 }
 
-/* Elegantní popisek na spodním okraji fotky */
 .gallery-item figcaption {
     position: absolute;
     bottom: 0;
@@ -230,18 +225,16 @@ footer {
     opacity: 0.9;
 }
 
-/* =======================================
-   Responzivita pro čtení na mobilu
-   ======================================= */
+/* responsive gallery */
 
 @media (max-width: 850px) {
     article {
-        width: 90%; /* Na mobilu a tabletu zvětší šířku článku pro lepší čitelnost */
+        width: 90%;
     }
 
     .stats {
         width: 90%;
-        grid-template-columns: 1fr; /* Statistiky pod sebe */
+        grid-template-columns: 1fr; 
     }
 
     .stage-gallery {
